@@ -1,0 +1,97 @@
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.qdt.blockchain.fx.progress.RingProgressIndicator?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" styleClass="borderPane" fx:controller="com.qdt.blockchain.fx.controller.MainController">
+	<top>
+		<HBox spacing="0" styleClass="hBox" alignment="BASELINE_RIGHT">
+		 <padding>
+	   		 <Insets right="10.0" top="20.0" />
+	  	</padding>
+			<children>
+				<JFXButton fx:id="newProject" onAction="#renewLicense" style="-jfx-button-type: RAISED; -fx-background-color: #485167;  -fx-padding: 0.5em 0.5em;">
+					<graphic>
+						<Label text="Extend License" styleClass="button-text" />
+					</graphic>
+				</JFXButton>
+			</children>
+		</HBox>
+	</top>
+	<left>
+	</left>
+	<center>
+		<VBox spacing="10" alignment="CENTER">
+			<Label text="MySecureBook" styleClass="letterpress" />
+			<VBox spacing="10" alignment="CENTER">
+				<RingProgressIndicator fx:id="ringProgress" />
+			</VBox>
+			<HBox spacing="10" alignment="CENTER">
+				<JFXButton fx:id="newProject" onAction="#createNewProject" prefWidth="80" styleClass="button-raised">
+					<graphic>
+						<VBox spacing="10" alignment="CENTER">
+							<children>
+								<FontAwesomeIcon iconName="TH_LARGE" size="8em"
+									glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+								<Label text="Create Project" styleClass="button-text" />
+							</children>
+						</VBox>
+					</graphic>
+				</JFXButton>
+				<JFXButton fx:id="openProject" onAction="#openExistingProject" prefWidth="80" styleClass="button-raised">
+					<graphic>
+						<VBox spacing="10" alignment="CENTER">
+							<children>
+								<FontAwesomeIcon iconName="FOLDER_OPEN"
+									size="8em"
+									glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+								<Label text="Explore Project" styleClass="button-text" />
+							</children>
+						</VBox>
+					</graphic>
+				</JFXButton>
+				<JFXButton fx:id="openHelp" onAction="#openProjectHelp" styleClass="button-raised" prefWidth="80">
+					<graphic>
+						<VBox spacing="10" alignment="CENTER">
+							<children>
+								<FontAwesomeIcon iconName="QUESTION_CIRCLE"
+									size="8em"
+									glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+								<Label text="Help Section" styleClass="button-text" />
+							</children>
+						</VBox>
+					</graphic>
+				</JFXButton>
+			</HBox>
+		</VBox>
+	</center>
+	<bottom>
+		<HBox spacing="10" alignment="CENTER">
+			<children>
+				<Label text="AES-128"  styleClass="letterpress" style="-fx-font: 30px 'LeagueGothicRegular';-fx-padding:0.6em;"/>
+				<Region HBox.hgrow="ALWAYS" />
+				<Label
+					text="Blockchain based encrypted document sharing"
+					style="-fx-font-size: 16px;" styleClass="button-text" />
+				<ImageView fitHeight="80" pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="/images/fingerprint.png" />
+					</image>
+				</ImageView>
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

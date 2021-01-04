@@ -1,0 +1,44 @@
+.jfx-decorator {
+    -fx-decorator-color: #272727;
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 2 2 2;
+}
+.rootPane .hBox {
+	-fx-background-color: #336699;
+	-fx-padding: 10;
+    -fx-border-width: 3;
+}
+.scroll-pane {
+   -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+}
+.list-view {
+    -fx-background-color: transparent;
+    -fx-pref-width:auto;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}

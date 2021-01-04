@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" styleClass="borderPane" fx:controller="com.qdt.blockchain.fx.controller.CategoryController">
+	<center>
+		<TilePane alignment="CENTER" hgap="20" vgap="20">
+		<children>
+			<JFXButton userData="Healthcare" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="PLUS_SQUARE" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Healthcare" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Education" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="UNIVERSITY" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Education" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Travel" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="PLANE" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Travel" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Lifestyle" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="CALENDAR" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Lifestyle" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Dining" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="CUTLERY" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Dining" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Shopping" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="SHOPPING_CART" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Shopping" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Grocery" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="SORT_AMOUNT_DESC" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Grocery" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Business" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="BRIEFCASE" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Business" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Automotive" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="CAR" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Automotive" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Utilities" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="COGS" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Utilities" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Finance" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="CREDIT_CARD" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Finance" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Entertainment" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="MUSIC" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Entertainment" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Property" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="HOME" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Property" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Personal" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="USER" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Personal" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton userData="Others" onAction="#handleCategoryClick" prefWidth="20" styleClass="button-raised" style=" -fx-pref-width: 160;-fx-pref-height: 150;">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="SLIDERS" size="6em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Others" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+		</children>
+		</TilePane>
+	</center>
+</BorderPane>

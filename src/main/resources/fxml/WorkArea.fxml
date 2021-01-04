@@ -1,0 +1,71 @@
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import com.qdt.blockchain.fx.progress.RingProgressIndicator?>
+
+<BorderPane fx:id="borderpane"  stylesheets="/css/main.css" xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" styleClass="borderPane" fx:controller="com.qdt.blockchain.fx.controller.WorkAreaController">
+	<top>
+		<HBox spacing="10" styleClass="hBox"></HBox>
+	</top>
+	<left>
+	</left>
+	<center>
+	</center>
+	<bottom>
+		<HBox spacing="60" alignment="CENTER">
+			<padding>
+	    		<Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+	  		</padding>
+	  		<JFXButton onAction="#createNewNode" prefWidth="90" alignment="CENTER_LEFT">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+						<StackPane>
+							<FontAwesomeIcon iconName="CIRCLE" size="8em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Node"/>
+						</StackPane>
+						<Label text="Create New" styleClass="button-text"/>
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+						<Separator orientation="VERTICAL" />
+			<GridPane hgap="10.0" vgap="10.0" alignment="CENTER">
+			 <children>
+				<Label text="Title" styleClass="button-text" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+				<Label text="Description" styleClass="button-text" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+				<Label text="Creation Date" styleClass="button-text" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+				<Label text="Attachment" styleClass="button-text" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+				<TextField fx:id="title" prefWidth="400" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+				<TextArea fx:id="description" wrapText="true" prefHeight="100" prefWidth="400" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<Label fx:id="date" styleClass="button-text" prefWidth="400" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<Label fx:id="attachment" styleClass="button-text" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+			 </children>
+			</GridPane>
+			<JFXButton onAction="#downloadAttachment" prefWidth="90">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+							<FontAwesomeIcon iconName="DOWNLOAD" size="8em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+							<Label text="Download" styleClass="button-text" />
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+		</HBox>
+	</bottom>
+</BorderPane>

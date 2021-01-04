@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" xmlns="http://javafx.com/javafx/2.2" styleClass="borderPane" fx:controller="com.qdt.blockchain.fx.controller.ProjectMenuController">
+	<center>
+	<SplitPane dividerPositions="0.3492462311557789"
+		focusTraversable="true" prefHeight="160.0" prefWidth="200.0">
+		<items>
+			<Label fx:id="category" rotate="-90" prefHeight="800" style="-fx-font-size: 30px;"/>
+			<ListView fx:id="listView"></ListView>
+		</items>
+	</SplitPane>
+	</center>
+	<bottom>
+	<HBox spacing="60" alignment="CENTER">
+		<VBox spacing="10" alignment="BASELINE_LEFT">
+		<JFXButton onAction="#importProject" prefWidth="200">
+				<graphic>
+					<HBox spacing="10" alignment="CENTER">
+						<children>
+						<StackPane>
+							<FontAwesomeIcon iconName="SIGN_IN" size="3em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+						</StackPane>
+						<Label text="Import Project" styleClass="button-text"/>
+						</children>
+					</HBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton onAction="#exportProject" prefWidth="200">
+				<graphic>
+					<HBox spacing="10" alignment="CENTER">
+						<children>
+						<StackPane>
+							<FontAwesomeIcon iconName="SIGN_OUT" size="3em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+						</StackPane>
+						<Label text="Export Project" styleClass="button-text"/>
+						</children>
+					</HBox>
+				</graphic>
+			</JFXButton>
+		</VBox>
+	
+		<JFXButton fx:id="openProject" onAction="#openProject" prefWidth="90">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+						<StackPane>
+							<FontAwesomeIcon iconName="DROPBOX" size="8em"
+								glyphStyle="-fx-fill: linear-gradient(#ffffff, #d2d2d2); -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+						</StackPane>
+						<Label text="Open Project" styleClass="button-text"/>
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+			<JFXButton onAction="#deleteProject" prefWidth="90">
+				<graphic>
+					<VBox spacing="10" alignment="CENTER">
+						<children>
+						<StackPane>
+							<FontAwesomeIcon iconName="REMOVE" size="8em"
+								glyphStyle=" -fx-fill: RED; -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 4 , 0.0 , 1 , 1 );" />
+						</StackPane>
+						<Label text="Delete" styleClass="button-text"/>
+						</children>
+					</VBox>
+				</graphic>
+			</JFXButton>
+	</HBox>
+	</bottom>
+</BorderPane>
